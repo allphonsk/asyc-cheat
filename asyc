@@ -1,0 +1,117 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Bold;}
+{\colortbl;\red255\green255\blue255;\red25\green26\blue42;}
+{\*\expandedcolortbl;;\cssrgb\c12941\c13725\c21961;}
+\margl1440\margr1440\vieww12480\viewh6100\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 \
+#\
+# asynchronous \
+\
+## callbacks 1\
+\
+getUser(x, callback function \{\
+	return\
+\});\
+\
+function getUser(x, callback) \{\
+  Logic \'85\'85..\
+return	callback;\
+\}\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 getUser( \'91quad\'92, function(user) \{\
+	console.log(user)\
+\});\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0  function getUser(id, callback) \{\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0   	var ans = Logic \'85\'85..\
+	callback(ans);\
+\}\
+\
+## callbacks 2\
+# turn function to callback\
+\
+function getData(whichdata) \{\
+	return [\'91one\'92, \'91two\'92, \'92three\'92]\
+\}	\
+\
+getData(whichdata,( callback) \{\
+ return ans; \
+\}) \
+\
+function getData(whichdata, callback) \{\
+	whichdata logic\'85.\
+	var ans = [\'91one\'92, \'91two\'92, \'92three\'92]\
+	callback(ans);\
+\}	\
+\
+\
+\
+//\
+#### promise\
+\
+const p = new Promise(function(resolve, reject)\{\
+\
+\});\
+\
+.then(resove => consloe(\'91ans\'92))\
+.catch(error => console(error))\
+\
+# eg above \
+# turn function to promise\
+function getData(whichdata) \{\
+	return [\'91one\'92, \'91two\'92, \'92three\'92]\
+\}\
+\
+function getData(whichdata) \{\
+	return new Promise((resolve, reject)=>\{\
+		logic\'85\'85\'85.\
+	resolve( [\'91one\'92, \'91two\'92, \'92three\'92])\
+\})\
+\}\
+ getData(users)\
+.then(data=>console data);\
+.catch(error => console error);\
+\
+\
+######\
+## 
+\f1\b\fs44 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Async and Await\
+
+\f0\b0\fs26 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+const get = await getData();\
+ \
+function getData(whichdata) \{\
+	return new Promise((resolve, reject)=>\{\
+		logic\'85\'85\'85.\
+	resolve( [\'91one\'92, \'91two\'92, \'92three\'92])\
+\})\
+\}\
+\
+async function allmethods() \{\
+	const x = await myfunction(y)\
+	const z =  await anothfunction(x)\
+\}\
+\
+ allmethods()\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
